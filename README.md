@@ -48,9 +48,9 @@ Below are files for this project.
 ### Libraris used
 The following Python libraries were used in this project.
 
-pandas
-sqlalchemy
-nltk
-sklearn
-pickle
-sys
+- pandas
+- sqlalchemy
+- nltk
+- sklearn
+- pickle
+- sys
