@@ -13,19 +13,19 @@ Below are a few screenshots of the web app.
 ### File Descriptions
 Below are files for this project.
 - app
-| |- master.html  # main page of web app
-| |- go.html  # classification result page of web app
-|- run.py  # Flask file that runs app
+    - master.html  # main page of web app
+    - go.html  # classification result page of web app
+    run.py  # Flask file that runs app
 
 - data
-|- disaster_categories.csv  # data to process 
-|- disaster_messages.csv  # data to process
-|- process_data.py # script to process data
-|- InsertDatabaseName.db   # database to save clean data to
+    - disaster_categories.csv  # data to process 
+    - disaster_messages.csv  # data to process
+    - process_data.py # script to process data
+    - InsertDatabaseName.db   # database to save clean data to
 
 - models
-|- train_classifier.py # script for a ML model
-|- classifier.pkl  # saved model
+    - train_classifier.py # script for a ML model
+    - classifier.pkl  # saved model
 
 - ETL Pipeline Preparation.ipynb # Jupyter notebook for ETL preparation
 - ML Pipeline Preparation.ipynb # Jupyter notebook for ML pipeline preparation
