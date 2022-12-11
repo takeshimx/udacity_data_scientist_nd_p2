@@ -25,10 +25,12 @@ nltk.download('wordnet')
 import pickle
 
 def load_data(database_filepath):
-    """This function loads data from a database
+    """
+    load_data
+    This function loads data from a database
        and create 2 aliases for building a ML model.
     
-    Params:
+    Inputs:
         database_filepath: database filepath
     
     Return:
@@ -46,10 +48,12 @@ def load_data(database_filepath):
 
 
 def tokenize(text):
-    """This function returns list of cleaned words
-    after 4 steps below, normalize, tokenize, remove stopwords, and lemmatize.
+    """
+    tokenize
+    This function returns list of cleaned words
+    after 4 steps below, normalize, tokenize, remove stopwords, and stem / lemmatize.
     
-    Params:
+    Inputs:
         text: text
     Return:
         lemmed: list of cleaned words
@@ -74,6 +78,13 @@ def tokenize(text):
 
 
 def build_model():
+    """
+    build_model
+    This function builds a ML model
+    
+    Return:
+        model: tuned model
+    """
     pipeline = Pipeline([
     ('vect', CountVectorizer(tokenizer=tokenize)),
     ('tfidf', TfidfTransformer()),
@@ -93,13 +104,15 @@ def build_model():
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
-    """This function evaluates a model.
+    """
+    evaluate_model
+    This function evaluates a model.
     
-    Params:
+    Inputs:
         model: ML model developed
         X_test: X for test
         Y_test: Y for test
-        category_names: 
+        category_names: category names
     """
     y_pred = model.predict(X_test)
     
@@ -107,9 +120,11 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
-    """This function is for saving a model.
+    """
+    save_model
+    This function is for saving a model and dumped as a pickle file.
     
-    Params:
+    Inputs:
         model: ML model developed
         model_filepath: model filepath
     """
