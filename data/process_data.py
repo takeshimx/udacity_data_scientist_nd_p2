@@ -4,13 +4,15 @@ from sqlalchemy import create_engine
 
 
 def load_data(messages_filepath, categories_filepath):
-    """This function loads and merge datasets.
+    """
+    load_data
+    This function loads and merge datasets to a single pandas dataframe.
     
-    Params:
+    Inputs:
         messages_filepath: messages filepath
         categories_filepath: categories filepath
     
-    Return:
+    Returns:
         df: merged dataframe
     """
     messages = pd.read_csv(messages_filepath)
@@ -23,9 +25,11 @@ def load_data(messages_filepath, categories_filepath):
 
 
 def clean_data(df):
-    """This function is for cleaning data before being pushed to a database
+    """
+    clean_data
+    This function is for cleaning data before being pushed to a database
     
-    Params:
+    Inputs:
         df: merged dataframe
     Return:
         df: merged dataframe
@@ -68,9 +72,11 @@ def clean_data(df):
 
 
 def save_data(df, database_filename):
-    """This function saves the clean dataset into an sqlite database.
+    """
+    save_data
+    This function saves the clean dataset into a sqlite database.
     
-    Params:
+    Inputs:
         df: cleaned dataframe
         database_filename: database filename
     """
