@@ -8,6 +8,7 @@ Below are a few screenshots of the web app.
 
 ![image](https://user-images.githubusercontent.com/29317778/206826231-da02a791-e1a1-4faa-a6ae-cd9505dbb49a.png)
 ![image](https://user-images.githubusercontent.com/29317778/206826247-11c43d04-7231-4413-9776-a4a7c9faadc9.png)
+![newplot](https://user-images.githubusercontent.com/29317778/206985645-2167109d-5ea9-4275-94c8-68537ff47713.png)
 
 
 ### File Descriptions
